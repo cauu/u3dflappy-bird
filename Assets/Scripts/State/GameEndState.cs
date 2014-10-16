@@ -1,7 +1,7 @@
 using UnityEngine;
 using System.Collections;
 
-public class GameEndState : GameState{
+public class GameEndState : State{
 	public override void onStart(){
 	
 	}

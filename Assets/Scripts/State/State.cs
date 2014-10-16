@@ -2,7 +2,7 @@ using UnityEngine;
 using System.Collections;
 using System.Reflection;
 
-public abstract class GameState{	
+public abstract class State{	
 
 	public abstract void onStart();
 

@@ -2,7 +2,7 @@ using UnityEngine;
 using System.Collections;
 
 public class Game:MonoBehaviour{
-	private GameState mCurrentState;
+	private State mCurrentState;
 
 	private EStates mCurrentStateName;
 
@@ -13,7 +13,7 @@ public class Game:MonoBehaviour{
 	};
 
 	public void onStart(){
-		mCurrentState = EStates.GameStartState;
+		mCurrentStateName = EStates.GameStartState;
 	}
 
 	public void onUpdate(){
@@ -25,7 +25,7 @@ public class Game:MonoBehaviour{
 		set { mCurrentStateName = value; }
 	}
 
-	public setGameState(GameState pCur){
+	public void setGameState(State pCur){
 		mCurrentState = pCur;
 	}
 
