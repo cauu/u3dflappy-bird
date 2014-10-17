@@ -1,8 +1,10 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/State/GameEndState.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Player/Helicopter.cs">
     <Files>
-      <File FileName="Assets/Scripts/State/GameEndState.cs" Line="12" Column="2" />
+      <File FileName="Assets/Scripts/Manager/PlayerManager.cs" Line="20" Column="28" />
+      <File FileName="Assets/Scripts/State/State.cs" Line="57" Column="48" />
+      <File FileName="Assets/Scripts/Player/Helicopter.cs" Line="13" Column="4" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
