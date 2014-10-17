@@ -4,7 +4,6 @@ using System.Collections;
 
 [Serializable]
 public class Helicopter : MonoBehaviour{
-	private double m_dVerticalVel;
 	public Vector2 m_jumpForce;
 
 	public Vector2 JumpForce {
