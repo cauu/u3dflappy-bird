@@ -23,7 +23,7 @@ public class Game:FSM{
 	public override void OnInit(){
 		s_game = this;
 		//The initial state of game 
-		m_eCurStateName = EStates.GamePlayState;
+		m_eCurStateName = EStates.GameStartState;
 
 		if (LstAllStates == null) {
 			throw new Exception("NullStateListException");

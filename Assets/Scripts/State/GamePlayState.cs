@@ -14,12 +14,10 @@ public class GamePlayState : State{
 	}
 
 	public override void OnEnter(){
-		Debug.Log ("Entering " + m_eStateName.ToString ());
 		base.OnEnter ();
 	}	
 
 	public override void OnExit(){
-		Debug.Log ("Exiting from " + m_eStateName.ToString ());
 		base.OnExit ();
 	}
 }

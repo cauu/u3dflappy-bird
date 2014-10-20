@@ -1,17 +1,12 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Game/Game.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Obstacle/Obstacle.cs">
     <Files>
-      <File FileName="Assets/Scripts/Game/Game.cs" Line="25" Column="31" />
-      <File FileName="Assets/Scripts/State/GamePlayState.cs" Line="7" Column="2" />
-      <File FileName="Assets/Scripts/State/FSM.cs" Line="18" Column="8" />
-      <File FileName="Assets/Scripts/State/State.cs" Line="22" Column="3" />
-      <File FileName="Assets/Scripts/Manager/PlayerManager.cs" Line="21" Column="51" />
-      <File FileName="Assets/Scripts/Game/Main.cs" Line="12" Column="8" />
-      <File FileName="../../../../../Volumes/NO NAME/Echo Integrated - 27 Nov/Assets/src/FSM/Game.cs" Line="24" Column="6" />
+      <File FileName="Assets/Scripts/Obstacle/Obstacle.cs" Line="19" Column="77" />
+      <File FileName="Assets/Scripts/Manager/ObstacleManager.cs" Line="39" Column="3" />
+      <File FileName="Assets/Scripts/Manager/PlayerManager.cs" Line="26" Column="32" />
+      <File FileName="Assets/Scripts/Utils/Generator.cs" Line="5" Column="1" />
       <File FileName="Assets/Scripts/Manager/Manager.cs" Line="18" Column="2" />
-      <File FileName="Assets/Scripts/State/GameEndState.cs" Line="15" Column="33" />
-      <File FileName="Assets/Scripts/Player/Helicopter.cs" Line="28" Column="2" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

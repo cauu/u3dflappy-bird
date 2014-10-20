@@ -36,12 +36,14 @@ public abstract class State : MonoBehaviour{
 	}
 
 	public virtual void OnEnter(){
+		Debug.Log ("Entering " + m_eStateName.ToString ());
 		foreach (Manager m in m_lstCurStateManagers) {
 			m.OnStart();		
 		}
 	}
 
 	public virtual void OnExit(){
+		Debug.Log ("Exiting from " + m_eStateName.ToString ());
 		foreach (Manager m in m_lstCurStateManagers) {
 			m.OnStop();		
 		}
