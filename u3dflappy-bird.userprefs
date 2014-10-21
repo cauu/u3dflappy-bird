@@ -1,12 +1,13 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Obstacle/Obstacle.cs">
     <Files>
-      <File FileName="Assets/Scripts/Obstacle/Obstacle.cs" Line="19" Column="77" />
-      <File FileName="Assets/Scripts/Manager/ObstacleManager.cs" Line="39" Column="3" />
-      <File FileName="Assets/Scripts/Manager/PlayerManager.cs" Line="26" Column="32" />
-      <File FileName="Assets/Scripts/Utils/Generator.cs" Line="5" Column="1" />
-      <File FileName="Assets/Scripts/Manager/Manager.cs" Line="18" Column="2" />
+      <File FileName="Assets/Scripts/Manager/PlayerManager.cs" Line="50" Column="2" />
+      <File FileName="Assets/Scripts/Manager/ObstacleManager.cs" Line="66" Column="51" />
+      <File FileName="Assets/Scripts/Manager/Manager.cs" Line="28" Column="16" />
+      <File FileName="Assets/Scripts/Obstacle/Obstacle.cs" Line="31" Column="82" />
+      <File FileName="Assets/Scripts/Utils/Generator.cs" Line="10" Column="3" />
+      <File FileName="Assets/Scripts/Utils/DecimalUtils.cs" Line="13" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

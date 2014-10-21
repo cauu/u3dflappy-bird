@@ -6,7 +6,7 @@ using System.Collections;
 public class GameStartState : State{
 	public override void OnInit(){
 		base.OnInit ();
-		m_eStateName = EStates.GameEndState;
+		m_eStateName = EStates.GameStartState;
 	}
 
 	public void OnKeyEvents(){

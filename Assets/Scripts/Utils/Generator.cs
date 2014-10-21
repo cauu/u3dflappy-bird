@@ -3,11 +3,12 @@ using System;
 
 public class Generator{
 
-	public static void GenerateGameObject(GameObject t){
+	public static GameObject GenerateGameObject(GameObject t){
 		if (t == null) {
 			throw new Exception("NullGameObjectException");
 		}
-		GameObject.Instantiate (t);
+//		Debug.Log ("Instantiate "+GameObject.Instantiate (t));
+		return (GameObject)GameObject.Instantiate (t);
 	}
 }
 

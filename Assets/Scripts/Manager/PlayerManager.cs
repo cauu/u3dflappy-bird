@@ -24,23 +24,46 @@ public class PlayerManager : Manager{
 	}
 
 	public override void OnInit(){
-		if (m_player == null) {
+		Debug.Log ("Player Manager is initialized");
+		if (Player == null) {
 			throw new Exception("NullPlayerException");
 		}
-		IsStoped = false;
+		Pause ();
+		Player.OnInit ();
 	}
 
 	public override void OnStart(){
+		Resume ();
 	}
 	
 	public override void OnUpdate(){
-		if (!IsStoped) {
+		if (!IsStoped&&!Player.IsDead) {
 			Player.OnKeyEvents();
+		}
+		if(Player.IsDead){
+			Game.GetInstance().CurStateName = EStates.GameEndState;
+			Game.GetInstance().TransiteToNextState();
 		}
 	}
 
 	public override void OnStop(){
-		IsStoped = true;
+		//Pause ();
+		//Debug.Log ("Stop rendering");
+//		if(Player.IsDead){
+//			Game.GetInstance().CurStateName = EStates.GameEndState;
+//			Game.GetInstance().TransiteToNextState();
+//		}
 	}
+
+	private void Pause(){
+		IsStoped = true;
+		Player.RemoveGravity ();
+	}
+
+	private void Resume(){
+		IsStoped = false;
+		Player.InitGravity ();
+	}
+
 }
 

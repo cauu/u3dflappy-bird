@@ -59,6 +59,7 @@
      <Compile Include="Assets\Scripts\State\GamePlayState.cs" />
      <Compile Include="Assets\Scripts\State\GameStartState.cs" />
      <Compile Include="Assets\Scripts\State\State.cs" />
+     <Compile Include="Assets\Scripts\Utils\DecimalUtils.cs" />
      <Compile Include="Assets\Scripts\Utils\Generator.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

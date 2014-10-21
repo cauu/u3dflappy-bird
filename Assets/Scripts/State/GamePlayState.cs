@@ -6,6 +6,7 @@ using System.Collections;
 public class GamePlayState : State{
 
 	public override void OnInit(){
+		base.OnInit ();
 		m_eStateName = EStates.GamePlayState;
 	}
 
