@@ -11,6 +11,10 @@ public class GameEndState : State{
 
 	public override void OnUpdate(){
 		base.OnUpdate ();
+		if (Input.GetKeyUp (KeyCode.Space)) {
+			Game.GetInstance().CurStateName = EStates.GameStartState;
+			Game.GetInstance().TransiteToNextState();
+		}
 
 	}
 

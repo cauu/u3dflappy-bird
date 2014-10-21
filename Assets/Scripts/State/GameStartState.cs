@@ -21,6 +21,9 @@ public class GameStartState : State{
 		OnKeyEvents ();
 	}
 
+	/// <summary>
+	/// Initialize all manager in gamestartstate
+	/// </summary>
 	public override void OnEnter(){
 		base.OnEnter ();
 	}

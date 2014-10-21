@@ -15,6 +15,8 @@ public class GamePlayState : State{
 	}
 
 	public override void OnEnter(){
+		//Can use memento pattern to restore player and obstacle status
+		base.OnInit ();
 		base.OnEnter ();
 	}	
 

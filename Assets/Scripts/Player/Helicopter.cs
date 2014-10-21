@@ -4,11 +4,15 @@ using System.Collections;
 
 [Serializable]
 public class Helicopter : MonoBehaviour{
+	public int m_iInitPositionX;
+	public int m_iInitPositionY;
 	public Vector2 m_jumpForce;
 	private bool m_bIsDead;
 
 	public void OnInit(){
 		IsDead = false;
+		gameObject.transform.position = new Vector3 (m_iInitPositionX, m_iInitPositionY);
+		gameObject.transform.rotation = new Quaternion ();
 	}
 
 

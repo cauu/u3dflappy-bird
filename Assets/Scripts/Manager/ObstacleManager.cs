@@ -30,14 +30,12 @@ public class ObstacleManager : Manager
 		if (m_obstacle == null) {
 			throw new Exception("NullObstacleException");
 		}
-		m_lstObstacles = new List<GameObject> ();
-		IsStoped = false;
+		InitObstacles ();
+		IsStoped = true;
 	}
 	
 	public override void OnStart(){
-//		Debug.Log ("manager is " + m_lstObstacles);
-
-		//GenerateObstacles ();
+		IsStoped = false;
 		InvokeRepeating ("GenerateObstacles", m_fObstacleStartTime,m_fObstacleGenerationGap);
 	}
 	
@@ -60,6 +58,16 @@ public class ObstacleManager : Manager
 //		ob = m_lstObstacles[0].GetComponent<Obstacle> ();
 //		ob.InitObstacle ();
 //	}
+
+	private void InitObstacles(){
+		if (m_lstObstacles != null) {
+			foreach(GameObject o in m_lstObstacles){
+				Destroy(o);
+			}
+			m_lstObstacles.Clear ();
+		}
+		m_lstObstacles = new List<GameObject> ();
+	}
 
 	private void GenerateObstacles(){
 		GameObject newObstacle = Generator.GenerateGameObject (m_obstacle);
