@@ -5,9 +5,9 @@ using System;
 public class PlayerManager : Manager{
 	private static PlayerManager m_instance;
 
-	public Helicopter m_player;
+	public Player m_player;
 
-	public Helicopter Player {
+	public Player Player {
 		get {
 			return m_player;
 		}
@@ -39,6 +39,7 @@ public class PlayerManager : Manager{
 	public override void OnUpdate(){
 		if (!IsStoped&&!Player.IsDead) {
 			Player.OnKeyEvents();
+			Player.OnAnimate();
 		}
 		if(Player.IsDead){
 			Game.GetInstance().CurStateName = EStates.GameEndState;
