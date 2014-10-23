@@ -20,6 +20,12 @@ public class GamePlayState : State{
 		base.OnEnter ();
 	}	
 
+	public override void OnKeyEvent(){
+	}
+
+	public override void OnTouchEvent(){
+	}
+
 	public override void OnExit(){
 		base.OnExit ();
 	}

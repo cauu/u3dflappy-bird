@@ -9,8 +9,15 @@ public class GameStartState : State{
 		m_eStateName = EStates.GameStartState;
 	}
 
-	public void OnKeyEvents(){
+	public override void OnKeyEvent(){
 		if (Input.GetKeyUp (KeyCode.Space)) {
+			Game.GetInstance().CurStateName = EStates.GamePlayState;
+			Game.GetInstance().TransiteToNextState();
+		}
+	}
+
+	public override void OnTouchEvent(){
+		if(Input.touchCount>0&&Input.GetTouch(0).phase==TouchPhase.Ended){
 			Game.GetInstance().CurStateName = EStates.GamePlayState;
 			Game.GetInstance().TransiteToNextState();
 		}
@@ -18,7 +25,8 @@ public class GameStartState : State{
 	
 	public override void OnUpdate(){
 		base.OnUpdate ();
-		OnKeyEvents ();
+		OnKeyEvent ();
+		OnTouchEvent();
 	}
 
 	/// <summary>

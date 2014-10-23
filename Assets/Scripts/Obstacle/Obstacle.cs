@@ -30,6 +30,8 @@ public class Obstacle : MonoBehaviour {
 	public void InitObstacle(){
 		gameObject.transform.position = new Vector3 (m_fInitPositionX, m_fInitPositionY+DecimalUtils.RandomFloatNumber(m_fInitDeviation));
 		IsCollided = false;
+		//test
+		//rigidbody2D.AddForce(new Vector2(1000,100));
 	}
 
 	private bool IsRigidBody(){

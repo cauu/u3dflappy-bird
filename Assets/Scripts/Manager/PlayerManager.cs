@@ -40,6 +40,7 @@ public class PlayerManager : Manager{
 		if (!IsStoped&&!Player.IsDead) {
 			Player.OnKeyEvents();
 			Player.OnAnimate();
+			Player.OnTouchEvent();
 		}
 		if(Player.IsDead){
 			Game.GetInstance().CurStateName = EStates.GameEndState;

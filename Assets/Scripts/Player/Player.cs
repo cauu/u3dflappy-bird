@@ -50,7 +50,13 @@ public class Player : MonoBehaviour{
 			CopterJump();
 		}
 	}
-	
+
+	public void OnTouchEvent(){
+		if(Input.touchCount>0&&Input.GetTouch(0).phase==TouchPhase.Ended){
+			CopterJump();
+		}
+	}
+
 	public void OnCollisionEnter2D(){
 		Die ();
 	}
