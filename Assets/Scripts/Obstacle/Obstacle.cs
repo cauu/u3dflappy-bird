@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System;
 using System.Collections;
 
@@ -28,7 +28,7 @@ public class Obstacle : MonoBehaviour {
 	}
 
 	public void InitObstacle(){
-		gameObject.transform.position = new Vector3 (m_fInitPositionX, m_fInitPositionY+DecimalUtils.RandomFloatNumber(m_fInitDeviation));
+		gameObject.transform.position = new Vector3 (m_fInitPositionX, m_fInitPositionY+RandomUtils.RandomFloatNumber(m_fInitDeviation));
 		IsCollided = false;
 		//test
 		//rigidbody2D.AddForce(new Vector2(1000,100));
@@ -44,8 +44,11 @@ public class Obstacle : MonoBehaviour {
 
 	}
 
-	public void OnCollisionEnter2D(){
-		IsCollided = true;
+	public void OnCollisionEnter2D(Collision2D coll){
+		if (coll.gameObject.tag == "Player") {
+			IsCollided = true;
+			coll.gameObject.GetComponent<Player>().Die();
+		}
 	}
 
 	private void SingleMovement(){

@@ -14,6 +14,8 @@ public class Player : MonoBehaviour{
 	private SpriteRenderer m_spriteRender;
 	private int m_iCurAnimIndex;
 
+	public Score m_score;
+
 	public void OnInit(){
 		IsDead = false;
 		gameObject.transform.position = new Vector3 (m_iInitPositionX, m_iInitPositionY);
@@ -41,8 +43,12 @@ public class Player : MonoBehaviour{
 		}
 	}
 
-	private void Die(){
+	public void Die(){
 		IsDead = true;
+	}
+
+	public void Score(int score){
+		m_score.GetSocore (score);
 	}
 
 	public void OnKeyEvents(){
@@ -57,9 +63,9 @@ public class Player : MonoBehaviour{
 		}
 	}
 
-	public void OnCollisionEnter2D(){
-		Die ();
-	}
+//	public void OnCollisionEnter2D(){
+//		Die ();
+//	}
 
 	public void OnAnimate(){
 		m_iCurAnimIndex = (int)(Time.timeSinceLevelLoad*m_fps);

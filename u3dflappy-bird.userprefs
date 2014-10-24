@@ -1,12 +1,9 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Obstacle\Obstacle.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Player/Player.cs">
     <Files>
-      <File FileName="Assets\Scripts\NPC\NPC.cs" Line="32" Column="41" />
-      <File FileName="Assets\Scripts\Player\Player.cs" Line="82" Column="3" />
-      <File FileName="Assets\Scripts\State\State.cs" Line="28" Column="3" />
-      <File FileName="Assets\Scripts\Manager\ObstacleManager.cs" Line="34" Column="19" />
-      <File FileName="Assets\Scripts\Obstacle\Obstacle.cs" Line="47" Column="33" />
+      <File FileName="Assets/Scripts/Player/Score.cs" Line="13" Column="3" />
+      <File FileName="Assets/Scripts/Player/Player.cs" Line="17" Column="12" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
